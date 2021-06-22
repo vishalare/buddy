@@ -59,17 +59,7 @@ def TaskExe():
         img=pyautogui.screenshot()
         img.save('E:\\New folder (3)\\u.png')
         Speak('screenshot taken.....')
-    def READER2():
-        Speak('the demon book started')
-        pdf = pdfplumber.open('The-Demon-Girl.pdf')
-        page = pdf.pages[6]
-        text = page.extract_text()
-        transl = Translator()
-        textHin = transl.translate(text,'hi')
-        textm = textHin.text
-        Speak(textm)
-                 
-
+   
     def bookReader():
             Speak("Tell Me The Name Of The Book!")
 
